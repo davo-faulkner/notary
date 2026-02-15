@@ -33,4 +33,5 @@ To verify an entry in this notary:
    openssl ts -verify -data filename.hash.sig -in filename.hash.sig.tsr -CAfile freetsa.crt
 
 3. **Verify the Bitcoin Blockchain Anchor:**
+
    Upload `filename.hash.sig` and `filename.hash.sig.ots` to [OpenTimestamps.org](https://opentimestamps.org/#info) to verify the decentralized proof of existence.
