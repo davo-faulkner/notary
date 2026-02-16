@@ -30,7 +30,7 @@ To verify an entry in this notary:
 
 2. **Verify the Timestamp:**
    ```bash
-   openssl ts -verify -data filename.hash.sig -in filename.hash.sig.tsr -CAfile freetsa.crt
+   openssl ts -reply -in 1.txt.hash.sig.tsr -text
 
 3. **Verify the Bitcoin Blockchain Anchor:**
 
