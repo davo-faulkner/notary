@@ -13,6 +13,7 @@ This repository employs a multi-factor authentication strategy for all stored co
 3. **Time (Fast - RFC 3161):** PGP signatures are anchored by a Trusted Timestamping Authority (TSA) to prove the content existed at a specific point in history.
 4. **Time (Immutable - OpenTimestamps):** Signatures are anchored to the Bitcoin blockchain via OTS, providing a decentralized and permanent proof of existence.
 5. **Provenance (Git):** The commit history of this repository provides a public, Merkle-tree-based audit trail.
+6. **Permanence (Wayback Machine):** A third-party historical snapshot of this repository. This serves as a public witness to the ledger's state, preventing retrospective alteration and ensuring public permanence.
 
 ## Repository Structure
 Each authenticated item is organized as follows:
