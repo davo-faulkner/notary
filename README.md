@@ -21,6 +21,12 @@ Each authenticated item is organized as follows:
 - `filename.hash.sig.tsr`: An RFC 3161 timestamp response file verifying the signature.
 - `filename.hash.sig.ots`: An OpenTimestamps proof file anchored to the Bitcoin blockchain.
 
+## Redundancy & Public Permanence
+To ensure this ledger remains accessible even if the primary host is unavailable, the following external witnesses are utilized:
+
+1. **Internet Archive (Wayback Machine):** A snapshot of this repository is captured at [archive.org](https://web.archive.org/save/https://github.com/davo-faulkner/notary) following every major push to the `main` branch.
+2. **OpenTimestamps:** Every notarized entry is anchored to the Bitcoin blockchain to provide decentralized proof of existence.
+
 ## Verification
 To verify an entry in this notary:
 
