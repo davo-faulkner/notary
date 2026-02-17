@@ -18,9 +18,9 @@ This repository employs a multi-factor authentication strategy for all stored co
 ## Repository Structure
 Each authenticated item is organized as follows:
 - `filename.sha512`: The raw SHA-512 hash of the content.
-- `filename.hash.sig`: An armored GPG cleartext signature of the hash.
-- `filename.hash.sig.tsr`: An RFC 3161 timestamp response file verifying the signature.
-- `filename.hash.sig.ots`: An OpenTimestamps proof file anchored to the Bitcoin blockchain.
+- `filename.sha512.sig`: An armored GPG cleartext signature of the hash.
+- `filename.sha512.sig.tsr`: An RFC 3161 timestamp response file verifying the signature.
+- `filename.sha512.sig.ots`: An OpenTimestamps proof file anchored to the Bitcoin blockchain.
 
 ## Redundancy & Public Permanence
 To ensure this ledger remains accessible even if the primary host is unavailable, the following external witnesses are utilized:
