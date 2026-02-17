@@ -33,15 +33,15 @@ To verify an entry in this notary:
 
 1. **Verify the PGP Signature:**
    ```bash
-   gpg --verify filename.hash.sig
+   gpg --verify filename.sha512.sig
 
 2. **Verify the Timestamp:**
    ```bash
-   openssl ts -reply -in filename.hash.sig.tsr -text
+   openssl ts -reply -in filename.sha512.sig.tsr -text
 
 3. **Verify the Bitcoin Blockchain Anchor:**
 
-   Upload `filename.hash.sig` and `filename.hash.sig.ots` to [OpenTimestamps.org](https://opentimestamps.org/#info) to verify the decentralized proof of existence.
+   Upload `filename.sha512.sig` and `filename.sha512.sig.ots` to [OpenTimestamps.org](https://opentimestamps.org/#info) to verify the decentralized proof of existence.
 
 ## Automation
 Submissions to this ledger are managed via the [`no`](https://github.com/davo-faulkner/no) script, which codifies the 6-layer authentication stack for consistent execution.
